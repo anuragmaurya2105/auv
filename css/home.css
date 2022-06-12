@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.post-img img{
+    width: 100%;
+}
+
+.post-img{
+    display: flex;
+}
+
+.post{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+
+.post-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    
+}
+
+.post-content2{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.post-data{
+    width: 90%;
+}
+
+.post-heading h1{
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+}
+
+
+.heading h1{
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+}
+
+
+
+@media (max-width: 880px) {
+
+    .post-img img{
+        width: 100%;
+    }
+
+    
+  .post{
+      flex-direction: column;
+      margin: 20px;
+  }
+
+  .main{
+      margin-left: 0;
+  }
+
+  .post-content{
+      margin: 0px 5px;
+  }
+
+  .post-data{
+      width: 100%;
+  }
+
+  .heading h1,.post-heading h1{
+      font-size: 2.5rem;
+      margin: 10px;
+  }
+
+}
+
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}

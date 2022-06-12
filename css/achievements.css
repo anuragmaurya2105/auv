@@ -1,0 +1,80 @@
+
+.achievement-head{
+    background-image: url(/Images/header/team.jpeg);
+    background-position: top;
+  opacity: 0.9;
+  background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .achievement-heading{
+    box-shadow: 4px 6px 8px 3px rgba(0, 0, 0, 0.35);
+    padding: 0 40px;
+    background-color: white;
+  }
+  
+.achievement-header{
+   
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 96px;
+    font-weight: bold;
+    color: #20B2AA;
+    margin: 0 0;
+}
+
+.achievement-div{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    box-shadow: 4px 6px 20px 2px rgba(0, 0, 0, 0.35);
+    
+    border-radius: 20px;
+    margin: 30px 40px;
+    padding: 20px 20px;
+}
+
+.img-div{
+  /* background-color: rgb(9, 9, 98); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.competition-img{
+    width: 20vw;
+    height: auto;
+}
+
+.competition-achievements{
+    display: flex;
+    /* flex-direction: row; */
+
+}
+.competition-list{
+    list-style: disc;
+}
+
+.competition-list h2{
+    font-size: 2rem;
+    color:#20B2AA ;
+}
+
+
+
+@media (max-width: 600px) {
+   .achievement-div{
+       flex-direction: column;
+       align-content: space-between;
+   }
+
+   .achievement-header{
+     font-size: 2rem;
+   }
+  }

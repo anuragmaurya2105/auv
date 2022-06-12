@@ -1,0 +1,134 @@
+
+
+/* header {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+} */
+
+.team-head{
+  background-image: url(/Images/header/team.jpeg);
+  background-position: 0em;
+  opacity: 0.9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-heading{
+  box-shadow: 4px 6px 8px 3px rgba(0, 0, 0, 0.5);
+  padding: 0 40px;
+  background-color: rgb(255 255 255 / 68%);
+}
+
+.team-headings{
+  font-size: 96px;
+  font-weight: bold;
+  color: #20B2AA;
+  margin: 0 0;
+}
+.band {
+  width: 90%;
+  max-width: 1280px; 
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+  @media (min-width: 30em) {
+    .band{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 90em) {
+    .band{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+
+.card {
+  background: white;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100%; */
+
+   /* sets up hover state */
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in;
+}
+  .card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  article {
+    padding: 10px;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 0;
+    color: rgb(0, 0, 0);
+  }
+
+  p {
+    flex: 1;
+    line-height: 1.4;
+  }
+
+  .band span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .band span i{
+    margin-right: 10px;
+  }
+
+  .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .software{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+  }
+
+  .software .post-heading h1{
+    margin: 50px;
+  }
+
+/* .item-1 h1 {
+    font-size: 24px;
+}
+*/
+
+@media (max-width: 776px) {
+  .team-headings{
+    font-size: 2rem;
+  }
+}
